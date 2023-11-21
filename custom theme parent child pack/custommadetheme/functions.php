@@ -67,6 +67,9 @@ add_theme_support( 'post-thumbnails' );
 add_image_size( 'single-feature', 500, 500, true );  
 
 // This theme uses wp_nav_menu() in two locations.
-	register_nav_menus( array(
-		'primary'   => __( 'Header Menu', 'customprojectname' ),
-	) );
+// register menus
+
+register_nav_menus(array(
+	'main_menu' 	=> __('Main Menu'),
+	'footer_menu' 	=> __('Footer Menu'),
+));
